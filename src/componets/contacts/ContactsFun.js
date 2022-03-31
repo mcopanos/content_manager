@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Contact from './Contact';
-import { Consumer } from '../context'
+import { Consumer } from '../../context';
+// import { render } from '@testing-library/react';
 
-
- class Contacts extends Component {  
-  render() {
-    return(
-      <Consumer>
+export default function ContactsFun() {
+ 
+  return (
+    <Consumer>
         {value => {
           const { contacts } = value;
           return (
@@ -23,8 +23,6 @@ import { Consumer } from '../context'
           ) 
         }}
       </Consumer>
-    )
-  }
+  )
+  
 }
-
-export default Contacts;

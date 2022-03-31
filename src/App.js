@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import Contacts from './componets/Contacts';
-import ContactsFun from './componets/ContactsFun';
-import Header from './componets/Header';
+import ContactsFun from './componets/contacts/ContactsFun';
+import Header from './componets/layout/Header';
 
 import { Provider } from './context';
 
