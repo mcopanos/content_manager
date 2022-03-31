@@ -5,7 +5,7 @@ This project has full C.R.U.D. functionality. You will be able to add a contact,
 ## Install
 ### Run this on your machine
 
-To run this project on your machine you must have [Node.js] (https://nodejs.dev/download/) installed on your machine as well as [NPM] (https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). Just simply clone this project on you machine and run the start script below. 
+To run this project on your machine you must have [Node.js](https://nodejs.dev/download/) installed on your machine as well as [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm). Just simply clone this project on you machine and run the start script below. 
 
 ## Available Scripts
 
