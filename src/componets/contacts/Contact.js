@@ -7,7 +7,7 @@ class Contact extends Component {
     showContactInfo: false,
   };
 
-  OnDeleteClick = (id, dispatch) => {
+  onDeleteClick = (id, dispatch) => {
     dispatch({type: 'DELETE_CONTACT', payload: id})
   }
 
@@ -28,7 +28,7 @@ class Contact extends Component {
                 style={{ cursor: 'pointer' }}
               />
               <i 
-                onClick={this.OnDeleteClick.bind(this, id, dispatch)}
+                onClick={this.onDeleteClick.bind(this, id, dispatch)}
                 className="fas fa-times"
                 style={{cursor: 'pointer', float: 'right', color: '#F93154'}}
               />
@@ -51,7 +51,7 @@ class Contact extends Component {
 
 Contact.propTypes = {
     contact: PropTypes.object.isRequired,
-    deleteClickHandler: PropTypes.func.isRequired,
+    onDeleteClick: PropTypes.func,
 }
 
 export default Contact
