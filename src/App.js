@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './componets/layout/Header';
 import ContactsFun from './componets/contacts/ContactsFun';
 import About from './componets/pages/About';
 import AddContact from './componets/contacts/AddContact';
+import NotFound from './componets/pages/NotFound';
 
 import { Provider } from './context';
 
@@ -18,11 +19,12 @@ class App extends Component {
         <div className="App">
           <Header branding="Contact Manger"/>
           <div className="container">
-            <Routes>
-              <Route exact path='/'element={<ContactsFun />} />
-              <Route exact path='/about'element={<About />} />
-              <Route exact path='/add-contact'element={<AddContact />} />
-            </Routes>
+            <Switch>
+              <Route exact path='/'component={ContactsFun} />
+              <Route exact path='/about' component={About} />
+              <Route exact path='/add-contact' component={AddContact} />
+              <Route path='*' component={NotFound} />
+            </Switch>
           </div>
         </div>
         </Router>

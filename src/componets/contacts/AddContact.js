@@ -48,11 +48,13 @@ class AddContact extends Component {
       phone: '',
       errors: {}
     });
+    this.props.history.push('/');
+
   };
 
   render() {
     const {name, email, phone, errors} = this.state;
-
+    
     return (
       <Consumer>
         {value => {
@@ -91,7 +93,8 @@ class AddContact extends Component {
                     type="submit" 
                     value="Add Contact"
                     className="btn btn-lg btn-block btn-light form-control form-contol-lg my-3" 
-                  />
+                  >
+                  </input>
                 </form>
               </div>
             </div>
