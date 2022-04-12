@@ -22,7 +22,7 @@ const Header = (props) =>{
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/add-contact" className="nav-link">
+              <Link to="/contact/add" className="nav-link">
                 <i className="fas fa-plus"/> Add Contact
               </Link>
             </li>

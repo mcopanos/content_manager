@@ -4,6 +4,7 @@ import Header from './componets/layout/Header';
 import ContactsFun from './componets/contacts/ContactsFun';
 import About from './componets/pages/About';
 import AddContact from './componets/contacts/AddContact';
+import EditContact from './componets/contacts/EditContact';
 import NotFound from './componets/pages/NotFound';
 
 import { Provider } from './context';
@@ -22,7 +23,8 @@ class App extends Component {
             <Switch>
               <Route exact path='/'component={ContactsFun} />
               <Route exact path='/about' component={About} />
-              <Route exact path='/add-contact' component={AddContact} />
+              <Route exact path='/contact/add' component={AddContact} />
+              <Route exact path='/contact/edit/:id' component={EditContact} />
               <Route path='*' component={NotFound} />
             </Switch>
           </div>
